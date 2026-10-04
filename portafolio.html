@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Profesional</title>
+    <!-- Tailwind CSS para diseño moderno y responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons para iconografía moderna -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#ff82bf',
+                            100: '#fff8e9',
+                            500: '#fff8e9',
+                            600: '#ff509c',
+                            700: '#7048ef',
+                            900: '#442ca8',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- NAVEGACIÓN -->
+    <nav class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-200/80 transition-all duration-300" id="navbar">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <!-- Logotipo / Nombre -->
+                <div class="flex-shrink-0">
+                    <a href="#inicio" class="text-xl font-bold tracking-tight text-slate-900 hover:text-brand-600 transition">
+                        JRios<span class="text-brand-500">.</span>
+                    </a>
+                </div>
+                
+                <!-- Menú Desktop -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="#inicio" class="hover:text-brand-600 transition">Inicio</a>
+                    <a href="#sobre-mi" class="hover:text-brand-600 transition">Sobre mí</a>
+                    <a href="#proyectos" class="hover:text-brand-600 transition">Campañas y Proyectos</a>
+                    <a href="#habilidades" class="hover:text-brand-600 transition">Habilidades</a>
+                    <a href="#contacto" class="bg-brand-600 text-white px-4 py-2 rounded-full hover:bg-brand-700 transition shadow-sm hover:shadow">Contacto</a>
+                </div>
+                 <!-- Botón Menú Móvil -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="p-2 rounded-md text-slate-600 hover:text-slate-900 focus:outline-none" aria-label="Abrir Menú">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menú Desplegable Móvil -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-2">
+            <a href="#inicio" class="block py-2 text-slate-700 hover:text-brand-600 font-medium">Inicio</a>
+            <a href="#sobre-mi" class="block py-2 text-slate-700 hover:text-brand-600 font-medium">Sobre mí</a>
+            <a href="#proyectos" class="block py-2 text-slate-700 hover:text-brand-600 font-medium">Campañas y Proyectos</a>
+            <a href="#habilidades" class="block py-2 text-slate-700 hover:text-brand-600 font-medium">Habilidades</a>
+            <a href="#contacto" class="block py-2 text-brand-600 font-semibold">Contacto</a>
+        </div>
+    </nav>
+     <!-- SECCIÓN INICIO / HERO -->
+    <section id="inicio" class="pt-32 pb-20 md:pt-40 md:pb-28 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+            
+            <!-- Texto Introductorio -->
+            <div class="md:col-span-7 space-y-6 text-center md:text-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-brand-50 text-brand-700 rounded-full text-xs font-semibold tracking-wide border border-brand-100">
+                    <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span> Disponible para nuevos proyectos
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
+                    Hola, soy <span class="text-brand-600">Jimena</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-600 max-w-2xl font-normal leading-relaxed">
+                    Licenciada en Diseño Grafíco, y experiencia en Estrategia Digital y Gestión de Campañas. Transformo ideas creativas en resultados medibles y de alto impacto.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-2">
+                    <a href="#proyectos" class="inline-flex items-center justify-center px-6 py-3 bg-brand-600 text-white font-medium rounded-xl hover:bg-brand-700 shadow-md hover:shadow-lg transition">
+                        Ver Mis Campañas <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                    <a href="#contacto" class="inline-flex items-center justify-center px-6 py-3 bg-white border border-slate-300 text-slate-700 font-medium rounded-xl hover:bg-slate-50 transition">
+                        Contáctame
+                    </a>
+                </div>
+            </div>
+            <!-- Foto Principal / Perfil -->
+            <div class="md:col-span-5 flex justify-center">
+                <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-slate-200 group">
+                    <!-- 
+                        ======================================================================
+                        AQUÍ VA TU FOTO DE PERFIL
+                        Instrucción: Reemplaza el enlace (src="...") por la ruta de tu foto.
+                        Ejemplo local: src="foto-perfil.jpg" (si está en la misma carpeta)
+                        ======================================================================
+                    -->
+                    <!-- AQUÍ VA TU IMAGEN: foto-perfil.jpg -->
+                    <img src="foto-perfil.jpg" 
+                         alt="Foto de perfil de Tu Nombre" 
+                         class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x600/0284c7/ffffff?text=Tu+Foto+Aquí';">
+                    <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-2xl"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- SECCIÓN SOBRE MÍ -->
+    <section id="sobre-mi" class="py-20 bg-white border-y border-slate-200/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-brand-600 uppercase tracking-widest mb-2">Conóceme</h2>
+                <p class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Sobre Mí & Mi Trayectoria</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <!-- Foto secundaria o trabajo -->
+                <div class="rounded-2xl overflow-hidden shadow-lg border border-slate-100 bg-slate-100">
+                    <!-- 
+                        ======================================================================
+                        AQUÍ VA TU SEGUNDA FOTO (Trabando, evento o secundaria)
+                        Ejemplo local: src="sobre-mi.jpg"
+                        ======================================================================
+                    -->
+                    <!-- AQUÍ VA TU IMAGEN: sobre-mi.jpg -->
+                    <img src="sobremi.jpg" 
+                         alt="Sobre mí trabajando" 
+                         class="w-full h-80 sm:h-96 object-cover"
+                         onerror="this.onerror=null; this.src='https://placehold.co/800x600/0c4a6e/ffffff?text=Imagen+Sobre+M%C3%AD';">
+                </div>
+                <!-- Bio y Detalles -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-slate-900">
+                        Apasionado por la estrategia, el análisis y la creatividad
+                    </h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Con más de 2 años de experiencia en el desarrollo de estrategias y ejecución de campañas. Mi enfoque combina datos precisos con narrativa visual impactante para lograr el máximo alcance e interacción.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        He colaborado con marcas nacionales y startups locales en el diseño de proyectos multiplataforma, optimizando el retorno de inversión y posicionando marcas de manera efectiva.
+                    </p>
+
+                    <!-- Estadísticas / Logros -->
+                    <div class="grid grid-cols-3 gap-4 pt-4 border-t border-slate-100">
+                        <div>
+                            <p class="text-3xl font-extrabold text-brand-600">+10</p>
+                            <p class="text-xs text-slate-500 font-medium">Proyecctos Exitosos</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-extrabold text-brand-600">+3</p>
+                            <p class="text-xs text-slate-500 font-medium">Años Experiencia</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-extrabold text-brand-600">98%</p>
+                            <p class="text-xs text-slate-500 font-medium">Clientes Satisfechos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- SECCIÓN PROYECTOS Y CAMPAÑAS -->
+    <section id="proyectos" class="py-20 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-brand-600 uppercase tracking-widest mb-2">Mi Portafolio</h2>
+                <p class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Campañas y Proyectos Destacados</p>
+                <p class="text-slate-600 mt-4">Una selección de las campañas de mayor impacto en las que he participado.</p>
+            </div>
+
+            <!-- Grilla de Tarjetas de Proyectos -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                 <!-- TARJETA PROYECTO 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="h-48 overflow-hidden bg-slate-200 relative">
+                        <!-- 
+                            ======================================================================
+                            AQUÍ VA LA FOTO DEL PROYECTO 1
+                            Ejemplo local: src="proyecto-1.jpg"
+                            ======================================================================
+                        -->
+                        <!-- AQUÍ VA TU IMAGEN: proyecto-1.jpg -->
+                        <img src="proyecto-1.jpg" 
+                             alt="Campaña Verano 2024" 
+                             class="w-full h-full object-cover hover:scale-105 transition duration-500"
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/0284c7/ffffff?text=Campa%C3%B1a+Verano';">
+                        <span class="absolute top-4 right-4 bg-white/90 backdrop-blur-md text-slate-800 text-xs font-semibold px-2.5 py-1 rounded-full">
+                            Marketing Digital
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Había una vez</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Estrategia para el posicionamiento de un posdcast para niños. Alcance incrementado en un 140%.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                            <span class="text-xs font-medium text-slate-500">2024 • Cliente Alpha</span>
+                            <button class="text-brand-600 hover:text-brand-700 text-sm font-semibold inline-flex items-center">
+                                Detalles <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                 </div>
+                   <!-- TARJETA PROYECTO 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="h-48 overflow-hidden bg-slate-200 relative">
+                        <!-- 
+                            ======================================================================
+                            AQUÍ VA LA FOTO DEL PROYECTO 2
+                            Ejemplo local: src="proyecto-2.jpg"
+                            ======================================================================
+                        -->
+                        <!-- AQUÍ VA TU IMAGEN: proyecto-2.jpg -->
+                        <img src="campaña-2.jpg" 
+                             alt="Rebranding Estratégico" 
+                             class="w-full h-full object-cover hover:scale-105 transition duration-500"
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/0369a1/ffffff?text=Rebranding+Estrategico';">
+                        <span class="absolute top-4 right-4 bg-white/90 backdrop-blur-md text-slate-800 text-xs font-semibold px-2.5 py-1 rounded-full">
+                            Branding & B2B
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Rebranding & Posicionamiento</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Rediseño de identidad corporativa y estrategia de comunicación interna/externa para empresa de pañales.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                            <span class="text-xs font-medium text-slate-500">2023 • TechCorp</span>
+                            <button class="text-brand-600 hover:text-brand-700 text-sm font-semibold inline-flex items-center">
+                                Detalles <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- TARJETA PROYECTO 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div class="h-48 overflow-hidden bg-slate-200 relative">
+                        <!-- 
+                            ======================================================================
+                            AQUÍ VA LA FOTO DEL PROYECTO 3
+                            Ejemplo local: src="proyecto-3.jpg"
+                            ======================================================================
+                        -->
+                        <!-- AQUÍ VA TU IMAGEN: proyecto-3.jpg -->
+                        <img src="campaña-3.jpg" 
+                             alt="Estrategia de Redes Sociales" 
+                             class="w-full h-full object-cover hover:scale-105 transition duration-500"
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/075985/ffffff?text=Estrategia+Redes';">
+                        <span class="absolute top-4 right-4 bg-white/90 backdrop-blur-md text-slate-800 text-xs font-semibold px-2.5 py-1 rounded-full">
+                            Redes Sociales
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Campaña Social Media</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Creación de contenidos virales y estrategia de anuncios pagados en TikTok y Meta Ads con alto engagement.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                            <span class="text-xs font-medium text-slate-500">2023 • ModaStudio</span>
+                            <button class="text-brand-600 hover:text-brand-700 text-sm font-semibold inline-flex items-center">
+                                Detalles <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                   </div>
+        </div>
+    </section>
+    <!-- SECCIÓN HABILIDADES -->
+    <section id="habilidades" class="py-20 bg-white border-t border-slate-200/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-brand-600 uppercase tracking-widest mb-2">Mis Fortalezas</h2>
+                <p class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Habilidades y Herramientas</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Habilidad 1 -->
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-brand-200 hover:bg-brand-50/30 transition">
+                    <div class="w-12 h-12 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="target" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Estrategia Digital</h3>
+                    <p class="text-slate-600 text-sm">Planificación de campañas, segmentación de audiencia y funnels de conversión.</p>
+                </div>
+
+                <!-- Habilidad 2 -->
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-brand-200 hover:bg-brand-50/30 transition">
+                    <div class="w-12 h-12 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="bar-chart-3" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Análisis de Datos</h3>
+                    <p class="text-slate-600 text-sm">Métricas KPI, Google Analytics, métricas de ROI y optimización continua.</p>
+                </div>
+ <!-- Habilidad 3 -->
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-brand-200 hover:bg-brand-50/30 transition">
+                    <div class="w-12 h-12 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="pen-tool" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Creación de Contenido</h3>
+                    <p class="text-slate-600 text-sm">Copywriting creativo, diseño básico, edición gráfica y gestión de redes.</p>
+                </div>
+
+                <!-- Habilidad 4 -->
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:border-brand-200 hover:bg-brand-50/30 transition">
+                    <div class="w-12 h-12 bg-brand-100 text-brand-600 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="users" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Gestión de Equipos</h3>
+                    <p class="text-slate-600 text-sm">Liderazgo de proyectos, relación con clientes y coordinación de freelancers.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+<!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                
+                <div>
+                    <h2 class="text-xs font-bold text-brand-500 uppercase tracking-widest mb-2">Hablemos</h2>
+                    <p class="text-3xl font-extrabold sm:text-4xl mb-6">¿Tienes una campaña o proyecto en mente?</p>
+                    <p class="text-slate-400 mb-8 leading-relaxed">
+                        Estoy disponible para proyectos freelance, consultorías o colaboraciones a tiempo completo. Envíame un mensaje y coordinemos una conversación.
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-brand-500">
+                                <i data-lucide="mail" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Correo Electrónico</p>
+                                <p class="font-medium">jimena@naranxadul.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center text-brand-500">
+                                <i data-lucide="linkedin" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">LinkedIn</p>
+                                <p class="font-medium">Jimena Rios</p>
+                            </div>
+                        </div>
+                         </div>
+                </div>
+
+                <!-- Formulario de contacto simulado -->
+                <div class="bg-slate-800/80 p-8 rounded-2xl border border-slate-700/50 backdrop-blur">
+                    <form id="contact-form" class="space-y-4" onsubmit="handleFormSubmit(event)">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">Nombre Completo</label>
+                            <input type="text" required class="w-full px-4 py-2.5 rounded-lg bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-brand-500 text-sm" placeholder="Tu nombre">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">Correo Electrónico</label>
+                            <input type="email" required class="w-full px-4 py-2.5 rounded-lg bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-brand-500 text-sm" placeholder="tu@email.com">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">Mensaje</label>
+                            <textarea rows="4" required class="w-full px-4 py-2.5 rounded-lg bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-brand-500 text-sm resize-none" placeholder="Cuéntame sobre tu proyecto..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-3 bg-brand-600 hover:bg-brand-500 text-white font-semibold rounded-lg transition shadow-md">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                    <div id="form-message" class="hidden mt-4 p-3 bg-brand-900/50 border border-brand-500/50 text-brand-200 rounded-lg text-sm text-center">
+                        ¡Gracias! Tu mensaje ha sido enviado correctamente.
+                    </div>
+                </div>
+
+            </div>
+             <!-- Footer / Derechos -->
+            <div class="mt-20 pt-8 border-t border-slate-800 text-center text-slate-500 text-xs">
+                © <span id="year"></span> Tu Nombre. Todos los derechos reservados.
+            </div>
+        </div>
+    </section>
+
+    <!-- SCRIPT INTERACTIVO -->
+    <script>
+        // Inicializar iconos de Lucide
+        lucide.createIcons();
+
+        // Año dinámico para el footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Lógica de menú móvil
+        const menuBtn = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Enviar formulario (Simulado)
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const form = document.getElementById('contact-form');
+            const message = document.getElementById('form-message');
+            
+            form.reset();
+            message.classList.remove('hidden');
+            setTimeout(() => {
+                message.classList.add('hidden');
+            }, 5000);
+        }
+         </script>
+</body>
+</html>
