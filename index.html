@@ -31,8 +31,7 @@
                 }
             }
         }
-        
-     </script>
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
@@ -40,11 +39,26 @@
 </head>
 <body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 antialiased selection:bg-brand-500 selection:text-white transition-colors duration-300">
 
+    <!-- HERO HEADER: MI PRIMER PÁGINA WEB -->
+    <header class="relative pt-24 pb-16 md:pt-32 md:pb-20 bg-gradient-to-r from-brand-900 via-brand-800 to-slate-900 text-white overflow-hidden shadow-xl">
+        <!-- Efectos de fondo sutiles -->
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-brand-500/20 via-transparent to-transparent"></div>
+        
+        <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight drop-shadow-md">
+                Mi primer página web
+            </h1>
+            <p class="text-lg sm:text-2xl text-brand-100 font-light tracking-wide max-w-2xl mx-auto">
+                Bienvenido a mi sitio
+            </p>
+        </div>
+    </header>
+
     <!-- NAVEGACIÓN -->
-    <nav class="fixed top-0 left-0 w-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-md z-50 border-b border-slate-200/80 dark:border-slate-800 transition-colors duration-300" id="navbar">
+    <nav class="sticky top-0 w-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-md z-50 border-b border-slate-200/80 dark:border-slate-800 transition-colors duration-300" id="navbar">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
-                <!-- Logotipo / Nombre -->
+                 <!-- Logotipo / Nombre -->
                 <div class="flex-shrink-0">
                     <a href="#inicio" class="text-xl font-bold tracking-tight text-slate-900 dark:text-white hover:text-brand-600 dark:hover:text-brand-500 transition">
                         JRios<span class="text-brand-500">.</span>
@@ -56,6 +70,7 @@
                     <a href="#sobre-mi" class="hover:text-brand-600 dark:hover:text-brand-500 transition">Sobre mí</a>
                     <a href="#proyectos" class="hover:text-brand-600 dark:hover:text-brand-500 transition">Campañas y Proyectos</a>
                     <a href="#habilidades" class="hover:text-brand-600 dark:hover:text-brand-500 transition">Habilidades</a>
+                    <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="hover:text-brand-600 dark:hover:text-brand-500 transition">Google</a>
                     
                     <!-- Botón Toggle Modo Oscuro / Claro -->
                     <button id="theme-toggle" aria-label="Cambiar Tema" class="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-500 transition">
@@ -70,12 +85,12 @@
                     <button id="theme-toggle-mobile" aria-label="Cambiar Tema Móvil" class="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
                         <i data-lucide="moon" id="theme-toggle-dark-icon-mobile" class="w-5 h-5"></i>
                         <i data-lucide="sun" id="theme-toggle-light-icon-mobile" class="w-5 h-5 hidden"></i>
-                    </button>
+                    </button> 
                     <button id="mobile-menu-button" class="p-2 rounded-md text-slate-600 dark:text-slate-300 hover:text-slate-900 focus:outline-none" aria-label="Abrir Menú">
                         <i data-lucide="menu" class="w-6 h-6"></i>
                     </button>
                 </div>
-            </div>
+             </div>
         </div>
         <!-- Menú Desplegable Móvil -->
         <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-4 pt-2 pb-4 space-y-2">
@@ -83,11 +98,13 @@
             <a href="#sobre-mi" class="block py-2 text-slate-700 dark:text-slate-200 hover:text-brand-600 font-medium">Sobre mí</a>
             <a href="#proyectos" class="block py-2 text-slate-700 dark:text-slate-200 hover:text-brand-600 font-medium">Campañas y Proyectos</a>
             <a href="#habilidades" class="block py-2 text-slate-700 dark:text-slate-200 hover:text-brand-600 font-medium">Habilidades</a>
+            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="block py-2 text-slate-700 dark:text-slate-200 hover:text-brand-600 font-medium">Google</a>
             <a href="#contacto" class="block py-2 text-brand-600 font-semibold">Contacto</a>
         </div>
     </nav>
+
     <!-- SECCIÓN INICIO / HERO -->
-    <section id="inicio" class="pt-32 pb-20 md:pt-40 md:pb-28 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="inicio" class="py-16 md:py-24 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
             
             <!-- Texto Introductorio -->
@@ -95,12 +112,12 @@
                 <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-brand-50 dark:bg-brand-900/40 text-brand-700 dark:text-brand-200 rounded-full text-xs font-semibold tracking-wide border border-brand-100 dark:border-brand-800/50">
                     <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span> Disponible para nuevos proyectos
                 </div>
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-tight">
+                <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-tight">
                     Hola, soy <span class="text-brand-600 dark:text-brand-500">Jimena</span>
-                </h1>
+                </h2>
                 <p class="text-lg sm:text-xl text-slate-600 dark:text-slate-300 max-w-2xl font-normal leading-relaxed">
                     Licenciada en Diseño Gráfico, con experiencia en Estrategia Digital y Gestión de Campañas. Transformo ideas creativas en resultados medibles y de alto impacto.
-                </p>
+                </p> 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-2">
                     <a href="#proyectos" class="inline-flex items-center justify-center px-6 py-3 bg-brand-600 text-white font-medium rounded-xl hover:bg-brand-700 shadow-md hover:shadow-lg transition">
                         Ver Mis Campañas <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
@@ -117,27 +134,29 @@
                     <img src="foto-perfil.jpg" 
                          alt="Foto de perfil de Jimena"
                          class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500"
-                         onerror="this.onerror=null; this.src='https://placehold.co/600x600/0284c7/ffffff?text=Tu+Foto+Aquí';">
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x600/e62e80/ffffff?text=Tu+Foto+Aquí';">
                     <div class="absolute inset-0 ring-1 ring-inset ring-black/10 dark:ring-white/10 rounded-2xl"></div>
                 </div>
             </div>
 
         </div>
     </section>
+
     <!-- SECCIÓN SOBRE MÍ -->
     <section id="sobre-mi" class="py-20 bg-white dark:bg-slate-900 border-y border-slate-200/60 dark:border-slate-800 transition-colors duration-300">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="text-xs font-bold text-brand-600 dark:text-brand-500 uppercase tracking-widest mb-2">Conóceme</h2>
                 <p class="text-3xl font-extrabold text-slate-900 dark:text-white sm:text-4xl">Sobre Mí & Mi Trayectoria</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            </div> 
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
                 <!-- Foto secundaria -->
                 <div class="rounded-2xl overflow-hidden shadow-lg border border-slate-100 dark:border-slate-800 bg-slate-100 dark:bg-slate-800">
                     <img src="sobremi.jpg" 
                          alt="Sobre mí trabajando" 
                          class="w-full h-80 sm:h-96 object-cover"
-                         onerror="this.onerror=null; this.src='https://placehold.co/800x600/0c4a6e/ffffff?text=Imagen+Sobre+M%C3%AD';">
+                         onerror="this.onerror=null; this.src='https://placehold.co/800x600/7048ef/ffffff?text=Imagen+Sobre+M%C3%AD';">
                 </div>
                 <!-- Bio y Detalles -->
                 <div class="space-y-6">
@@ -146,29 +165,95 @@
                     </h3>
                     <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
                         Con más de 2 años de experiencia en el desarrollo de estrategias y ejecución de campañas. Mi enfoque combina datos precisos con narrativa visual impactante para lograr el máximo alcance e interacción.
-                        </p>
+                    </p>
                     <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
                         He colaborado con marcas nacionales y startups locales en el diseño de proyectos multiplataforma, optimizando el retorno de inversión y posicionando marcas de manera efectiva.
                     </p>
-                     <!-- Estadísticas / Logros -->
-                    <div class="grid grid-cols-3 gap-4 pt-4 border-t border-slate-100 dark:border-slate-800">
-                        <div>
-                            <p class="text-3xl font-extrabold text-brand-600 dark:text-brand-500">+10</p>
-                            <p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Proyectos Exitosos</p>
-                        </div>
-                        <div>
-                            <p class="text-3xl font-extrabold text-brand-600 dark:text-brand-500">+3</p>
-                            <p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Años Experiencia</p>
-                        </div>
-                        <div>
-                            <p class="text-3xl font-extrabold text-brand-600 dark:text-brand-500">98%</p>
-                            <p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Clientes Satisfechos</p>
-                        </div>
-                    </div>
                 </div>
             </div>
+
+            <!-- TARJETAS DE ESTADÍSTICAS (Estilo solicitado de la Imagen 2) -->
+            <div class="mt-12 bg-slate-50/50 dark:bg-slate-950/40 p-6 sm:p-8 rounded-3xl border border-slate-200/80 dark:border-slate-800">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
+                    
+                    <!-- Tarjeta 1: Proyectos -->
+                    <div class="relative bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200/60 dark:border-slate-800/80 shadow-sm flex flex-col justify-between overflow-hidden">
+                        <!-- Borde vertical degradado en paleta brand -->
+                        <div class="absolute top-0 right-0 w-1.5 h-full bg-gradient-to-b from-brand-500 via-brand-600 to-brand-700"></div>
+                        
+                        <div class="space-y-4">
+                            <span class="inline-block px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-semibold rounded-md">
+                                Proyectos
+                            </span>
+                            <div class="text-4xl sm:text-5xl font-black tracking-tight text-slate-900 dark:text-white">
+                                +10
+                            </div>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 font-medium">
+                                Proyectos exitosos completados en tiempo y forma.
+                            </p>
+                        </div>
+                        <div class="pt-6 mt-6 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between">
+                            <span class="text-xs font-bold text-slate-800 dark:text-slate-200">Portafolio</span>
+                            <a href="#proyectos" class="text-xs font-medium text-brand-600 dark:text-brand-400 hover:underline flex items-center gap-1">
+                                Ver historias <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 2: Experiencia -->
+                    <div class="relative bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200/60 dark:border-slate-800/80 shadow-sm flex flex-col justify-between overflow-hidden">
+                        <!-- Borde vertical degradado en paleta brand -->
+                        <div class="absolute top-0 right-0 w-1.5 h-full bg-gradient-to-b from-brand-500 via-brand-600 to-brand-700"></div>
+                        
+                        <div class="space-y-4">
+                            <span class="inline-block px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-semibold rounded-md">
+                                Experiencia
+                            </span>
+                            <div class="text-4xl sm:text-5xl font-black tracking-tight text-slate-900 dark:text-white">
+                                +3 años
+                            </div>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 font-medium">
+                                Trayectoria continua en diseño y marketing digital.
+                            </p>
+                        </div>
+                        <div class="pt-6 mt-6 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between">
+                            <span class="text-xs font-bold text-slate-800 dark:text-slate-200">Trayectoria</span>
+                            <a href="#contacto" class="text-xs font-medium text-brand-600 dark:text-brand-400 hover:underline flex items-center gap-1">
+                                Saber más <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 3: Satisfacción -->
+                    <div class="relative bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200/60 dark:border-slate-800/80 shadow-sm flex flex-col justify-between overflow-hidden">
+                        <!-- Borde vertical degradado en paleta brand -->
+                        <div class="absolute top-0 right-0 w-1.5 h-full bg-gradient-to-b from-brand-500 via-brand-600 to-brand-700"></div>
+                        
+                        <div class="space-y-4">
+                            <span class="inline-block px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-semibold rounded-md">
+                                Satisfacción
+                            </span>
+                            <div class="text-4xl sm:text-5xl font-black tracking-tight text-slate-900 dark:text-white">
+                                98%
+                            </div>
+                            <p class="text-sm text-slate-500 dark:text-slate-400 font-medium">
+                                Clientes satisfechos con los resultados obtenidos.
+                            </p>
+                        </div>
+                        <div class="pt-6 mt-6 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between">
+                            <span class="text-xs font-bold text-slate-800 dark:text-slate-200">Reseñas</span>
+                            <a href="#contacto" class="text-xs font-medium text-brand-600 dark:text-brand-400 hover:underline flex items-center gap-1">
+                                Contactar <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </section>
+
     <!-- SECCIÓN PROYECTOS Y CAMPAÑAS -->
     <section id="proyectos" class="py-20 bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -186,7 +271,7 @@
                         <img src="proyecto-1.jpg" 
                              alt="Campaña Verano 2024" 
                              class="w-full h-full object-cover hover:scale-105 transition duration-500"
-                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/0284c7/ffffff?text=Campa%C3%B1a+Verano';">
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/ff509c/ffffff?text=Campa%C3%B1a+Verano';">
                         <span class="absolute top-4 right-4 bg-white/90 dark:bg-slate-800/90 backdrop-blur-md text-slate-800 dark:text-slate-200 text-xs font-semibold px-2.5 py-1 rounded-full">
                             Marketing Digital
                         </span>
@@ -197,7 +282,7 @@
                             <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
                                 Estrategia para el posicionamiento de un podcast para niños. Alcance incrementado en un 140%.
                             </p>
-                            </div>
+                        </div>
                         <div class="pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
                             <span class="text-xs font-medium text-slate-500 dark:text-slate-400">Había una vez</span>
                             <button class="text-brand-600 dark:text-brand-500 hover:text-brand-700 text-sm font-semibold inline-flex items-center">
@@ -210,10 +295,10 @@
                 <!-- TARJETA PROYECTO 2 -->
                 <div class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200/80 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
                     <div class="h-48 overflow-hidden bg-slate-200 dark:bg-slate-800 relative">
-                        <img src="campana-2.jpg" 
+                        <img src="campaña-2.jpg" 
                              alt="Rebranding Estratégico" 
                              class="w-full h-full object-cover hover:scale-105 transition duration-500"
-                             onerror="this.onerror=null; this.src='https'//placehold.co/600x400/0369a1/ffffff?text=Rebranding+Estrategico';">
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/e62e80/ffffff?text=Rebranding+Estrategico';">
                         <span class="absolute top-4 right-4 bg-white/90 dark:bg-slate-800/90 backdrop-blur-md text-slate-800 dark:text-slate-200 text-xs font-semibold px-2.5 py-1 rounded-full">
                             Branding & B2B
                         </span>
@@ -233,13 +318,14 @@
                         </div>
                     </div>
                 </div>
-<!-- TARJETA PROYECTO 3 -->
+
+                <!-- TARJETA PROYECTO 3 -->
                 <div class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200/80 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
                     <div class="h-48 overflow-hidden bg-slate-200 dark:bg-slate-800 relative">
-                        <img src="campana-3.jpg" 
+                        <img src="campaña-3.jpg" 
                              alt="Estrategia de Redes Sociales" 
                              class="w-full h-full object-cover hover:scale-105 transition duration-500"
-                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/075985/ffffff?text=Estrategia+Redes';">
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/7048ef/ffffff?text=Estrategia+Redes';">
                         <span class="absolute top-4 right-4 bg-white/90 dark:bg-slate-800/90 backdrop-blur-md text-slate-800 dark:text-slate-200 text-xs font-semibold px-2.5 py-1 rounded-full">
                             Redes Sociales
                         </span>
@@ -262,6 +348,7 @@
             </div>
         </div>
     </section>
+
     <!-- SECCIÓN HABILIDADES -->
     <section id="habilidades" class="py-20 bg-white dark:bg-slate-900 border-t border-slate-200/60 dark:border-slate-800 transition-colors duration-300">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -279,7 +366,7 @@
                     </div>
                     <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Estrategia Digital</h3>
                     <p class="text-slate-600 dark:text-slate-300 text-sm">Planificación de campañas, segmentación de audiencia y funnels de conversión.</p>
-                     </div>
+                </div>
 
                 <!-- Habilidad 2 -->
                 <div class="p-6 bg-slate-50 dark:bg-slate-800/60 rounded-2xl border border-slate-100 dark:border-slate-700/50 hover:border-brand-200 dark:hover:border-brand-500/50 transition">
@@ -289,7 +376,8 @@
                     <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Análisis de Datos</h3>
                     <p class="text-slate-600 dark:text-slate-300 text-sm">Métricas KPI, Google Analytics, métricas de ROI y optimización continua.</p>
                 </div>
-                 <!-- Habilidad 3 -->
+
+                <!-- Habilidad 3 -->
                 <div class="p-6 bg-slate-50 dark:bg-slate-800/60 rounded-2xl border border-slate-100 dark:border-slate-700/50 hover:border-brand-200 dark:hover:border-brand-500/50 transition">
                     <div class="w-12 h-12 bg-brand-100 dark:bg-brand-900/50 text-brand-600 dark:text-brand-400 rounded-xl flex items-center justify-center mb-4">
                         <i data-lucide="pen-tool" class="w-6 h-6"></i>
@@ -310,7 +398,8 @@
             </div>
         </div>
     </section>
-    <!-- SECCIÓN CONTACTO (Fondo Blanco en modo claro y Slate Oscuro en modo oscuro) -->
+
+    <!-- SECCIÓN CONTACTO -->
     <section id="contacto" class="py-20 bg-white dark:bg-slate-950 text-slate-900 dark:text-white border-t border-slate-200/80 dark:border-slate-900 transition-colors duration-300">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -345,7 +434,7 @@
                     </div>
                 </div>
 
-                <!-- Formulario de contacto con tarjeta Blanca en Modo Claro y Oscura en Modo Oscuro -->
+                <!-- Formulario de contacto -->
                 <div class="bg-white dark:bg-slate-900/90 p-8 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xl dark:shadow-none backdrop-blur">
                     <form id="contact-form" class="space-y-4" onsubmit="handleFormSubmit(event)">
                         <div>
@@ -368,7 +457,7 @@
                         ¡Gracias! Tu mensaje ha sido enviado correctamente.
                     </div>
                 </div>
-                </div>
+            </div>
 
             <!-- Footer / Derechos -->
             <div class="mt-20 pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-slate-500 dark:text-slate-400 text-xs">
@@ -391,33 +480,31 @@
 
         const darkIcon = document.getElementById('theme-toggle-dark-icon');
         const lightIcon = document.getElementById('theme-toggle-light-icon');
-        const darkIconMobile = document.getElementById('theme-toggle-dark-icon-mobile');
-        const lightIconMobile = document.getElementById('theme-toggle-light-icon-mobile');
-        // Función para actualizar iconos
+        darkIconMobile = document.getElementById('theme-toggle-dark-icon-mobile');
+        lightIconMobile = document.getElementById('theme-toggle-light-icon-mobile');
+
         function updateIcons(isDark) {
             if (isDark) {
                 darkIcon.classList.add('hidden');
                 lightIcon.classList.remove('hidden');
-                darkIconMobile.classList.add('hidden');
-                lightIconMobile.classList.remove('hidden');
+                if(darkIconMobile) darkIconMobile.classList.add('hidden');
+                if(lightIconMobile) lightIconMobile.classList.remove('hidden');
             } else {
                 lightIcon.classList.add('hidden');
                 darkIcon.classList.remove('hidden');
-                lightIconMobile.classList.add('hidden');
-                darkIconMobile.classList.remove('hidden');
+                if(lightIconMobile) lightIconMobile.classList.add('hidden');
+                if(darkIconMobile) darkIconMobile.classList.remove('hidden');
             }
         }
 
-        // Detectar o cargar preferencia guardada
         if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
             updateIcons(true);
-             } else {
+        } else {
             document.documentElement.classList.remove('dark');
             updateIcons(false);
         }
 
-        // Función de alternancia de tema
         function toggleTheme() {
             if (document.documentElement.classList.contains('dark')) {
                 document.documentElement.classList.remove('dark');
@@ -431,14 +518,17 @@
         }
 
         themeToggleBtn.addEventListener('click', toggleTheme);
-        themeToggleMobileBtn.addEventListener('click', toggleTheme);
-      // --- LÓGICA MENÚ MÓVIL ---
+        if(themeToggleMobileBtn) themeToggleMobileBtn.addEventListener('click', toggleTheme);
+
+        // --- LÓGICA MENÚ MÓVIL ---
         const menuBtn = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
 
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+        if(menuBtn) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
 
         // --- ENVIAR FORMULARIO (Simulado) ---
         function handleFormSubmit(event) {
@@ -452,7 +542,6 @@
                 message.classList.add('hidden');
             }, 5000);
         }
-     </script>
+    </script>
 </body>
 </html>
-
