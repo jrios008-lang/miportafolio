@@ -597,38 +597,46 @@
         </div>
     </section>
 
-    <!-- SECCIÓN SOBRE MÍ -->
-    <section id="sobre-mi" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-black/10 dark:border-white/10">
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-            
-            <div class="md:col-span-5 flex justify-center">
-                <div class="relative bg-white dark:bg-slate-900 p-4 pb-8 rounded-sm shadow-xl border-2 border-black rotate-2 hover:rotate-0 transition-transform duration-300 max-w-xs">
-                    <div class="tape w-24 h-6 absolute -top-3 left-1/2 -translate-x-1/2"></div>
-                    <img src="sobremi.jpg" 
-                         alt="Sobre Mí" 
-                         class="w-full h-80 object-cover"
-                         onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80';">
-                    <p class="font-script text-center text-slate-700 dark:text-slate-300 text-2xl mt-4">creando magia ♡</p>
-                </div>
+    <!-- SECCIÓN SOBRE MÍ (Colores corregidos para Modo Normal y Modo Oscuro) -->
+<section id="sobre-mi" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+        
+        <!-- Foto Polaroid -->
+        <div class="md:col-span-5 flex justify-center">
+            <div class="relative bg-white dark:bg-slate-900 p-4 pb-8 rounded-sm shadow-xl border-2 border-black rotate-2 hover:rotate-0 transition-transform duration-300 max-w-xs">
+                <div class="tape w-24 h-6 absolute -top-3 left-1/2 -translate-x-1/2"></div>
+                <img src="sobremi.jpg" 
+                     alt="Sobre Mí" 
+                     class="w-full h-80 object-cover"
+                     onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80';">
+                <p class="font-script text-center text-slate-700 dark:text-slate-300 text-2xl mt-4">creando magia ♡</p>
             </div>
-
-            <div class="md:col-span-7 space-y-6">
-                <span class="font-sans text-xs uppercase tracking-widest text-y2k-coral font-bold">Conóceme</span>
-                <h2 class="text-3xl sm:text-5xl font-serif font-bold text-y2k-wine dark:text-white leading-tight">
-                    Pasión por los detalles y la estrategia visual
-                </h2>
-                <p class="font-sans text-slate-600 dark:text-slate-300 text-base leading-relaxed">
-                    Combino el análisis cuantitativo de resultados con una dirección de arte impecable. Mi meta es que cada proyecto tenga alma propia, comunique con claridad y resuene con su audiencia.
-                </p>
-                <div class="pt-2">
-                    <a href="#contacto" class="bg-white dark:bg-y2k-wine border-2 border-black dark:border-white px-6 py-3 rounded-full font-bold text-sm uppercase shadow-[3px_3px_0px_#000] dark:shadow-[3px_3px_0px_#fff] inline-block hover:translate-x-1 hover:translate-y-1 transition">
-                        Hablemos de tu idea
-                    </a>
-                </div>
-            </div>
-
         </div>
-    </section>
+
+        <!-- Texto y Botón -->
+        <div class="md:col-span-7 space-y-6">
+            <span class="font-sans text-xs uppercase tracking-widest text-y2k-coral font-bold">Conóceme</span>
+            
+            <!-- Título: Blanco visible en ambos modos -->
+            <h2 class="text-3xl sm:text-5xl font-serif font-bold text-white leading-tight">
+                Pasión por los detalles y la estrategia visual
+            </h2>
+            
+            <!-- Párrafo: Rosa claro/gris visible -->
+            <p class="font-sans text-pink-100/90 dark:text-slate-300 text-base leading-relaxed">
+                Combino el análisis cuantitativo de resultados con una dirección de arte impecable. Mi meta es que cada proyecto tenga alma propia, comunique con claridad y resuene con su audiencia.
+            </p>
+            
+            <!-- Botón: Letras y borde bien contrastados -->
+            <div class="pt-2">
+                <a href="#contacto" class="bg-white hover:bg-slate-100 text-y2k-wine border-2 border-white px-6 py-3 rounded-full font-bold text-sm uppercase shadow-[3px_3px_0px_rgba(0,0,0,0.3)] inline-block hover:translate-x-1 hover:translate-y-1 transition">
+                    Hablemos de tu idea
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
 
     <!-- TESTIMONIAL RETRO -->
     <section class="py-20 bg-y2k-wine text-white text-center border-y-2 border-black">
